@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 antialiased;
+    background-image: 
+      radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(0, 0, 0, 0.02) 0%, transparent 50%);
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background-color: #bfdbfe !important; /* Tailwind blue-200 */
+    color: inherit;
+  }
+}
+
+.glass-panel {
+  @apply bg-white/80 backdrop-blur-xl border border-blue-100 shadow-2xl;
+}
+
+.glass-button {
+  @apply bg-white/50 hover:bg-white/80 active:bg-blue-50 backdrop-blur-md border border-blue-100 transition-all duration-200;
+}
+
+/* Tiptap specific styles */
+.ProseMirror {
+  @apply outline-none min-h-[500px] py-2 px-8 text-lg leading-relaxed text-slate-800;
+}
+
+.ProseMirror ::selection {
+  background-color: #bfdbfe !important;
+}
+
+.ProseMirror p {
+  @apply mb-2;
+}
+
+.ProseMirror h1 {
+  @apply text-4xl font-serif font-bold mb-3 text-slate-900;
+}
+
+.ProseMirror h2 {
+  @apply text-3xl font-serif font-semibold mb-3 text-slate-900;
+}
+
+.ProseMirror ul {
+  @apply list-disc ml-6 mb-3;
+}
+
+.ProseMirror ol {
+  @apply list-decimal ml-6 mb-3;
+}
+
+.ProseMirror blockquote {
+  @apply border-l-4 border-slate-200 pl-4 italic mb-3 text-slate-500;
+}
+
