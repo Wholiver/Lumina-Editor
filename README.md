@@ -1,4 +1,4 @@
-# Lumina Editor
+# Lumina Editor (work in progress)
 
 ## Overview
 
