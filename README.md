@@ -1,20 +1,24 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Lumina Editor
 
-# Run and deploy your AI Studio app
+Welcome to Lumina Editor, a powerful and intuitive text editor designed for developers and writers alike.
 
-This contains everything you need to run your app locally.
+## Features
+- **User-Friendly Interface**: Clean and modern UI that allows you to focus on your work.
+- **Code Highlighting**: Supports multiple programming languages with syntax highlighting.
+- **Customizable Themes**: Choose from various themes or create your own.
+- **Extensions Support**: Enhance functionality with plugins and extensions.
 
-View your app in AI Studio: https://ai.studio/apps/f6f6e404-7984-4f59-a796-66765de4fd0a
+## Installation
+Follow these steps to install Lumina Editor:
+1. Download the latest release from our [GitHub Releases](https://github.com/Wholiver/Lumina-Editor/releases).
+2. Extract the zip file.
+3. Run the installer and follow the prompts.
 
-## Run Locally
+## Usage
+Launch the editor and start creating! You can open files using the file menu or drag and drop files into the window.
 
-**Prerequisites:**  Node.js
+## Contribution
+We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) to get started.
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
